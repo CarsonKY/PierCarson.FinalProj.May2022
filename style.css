@@ -60,10 +60,44 @@ nav ul li {
 nav ul li a{
   color: green;
   font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
   text-transform: uppercase;
 }
 
+/* Initial Active NavBar specified in HTML */
+/* When a hover is detected, change color */
+
+
 a.active, a:hover{
-  background:#fff;
+  background:rgb(223, 138, 138);
   transition: .5sv;
+}
+
+/* Beginning of Hamburger menu */
+/* Creates a checkbox top left that will be hidden */
+
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display:none;
+
+}
+
+@media (max-width: 768px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+
+  }
+
 }
