@@ -69,7 +69,7 @@ nav ul li a{
 /* When a hover is detected, change color */
 
 
-a.active, a:hover{
+a:hover{
   background:rgb(223, 138, 138);
   transition: .5sv;
 }
@@ -93,11 +93,35 @@ a.active, a:hover{
 
 }
 
-@media (max-width: 768px){
-  label.logo{
-    font-size: 30px;
-    padding-left: 50px;
+/* If width less than 768px use less padding and initiate hamburger */
 
+@media (max-width: 952px){
+  label.logo{
+    padding-left: 20px;
+  }
+  .nav ul li a{
+    font-size: 16px;
+
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display:block;
+  
+    }
+   ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: 0;
+      text-align: center;
+
+    }
+  .nav ul li {
+    display: block;
   }
 
 }
