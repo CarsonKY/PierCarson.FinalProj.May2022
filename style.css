@@ -55,3 +55,15 @@ nav ul li {
     margin: 0 5px;
 }
 
+/* Change Nav Bar anchor colors, convert to uppercase for readability */
+
+nav ul li a{
+  color: green;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover{
+  background:#fff;
+  transition: .5sv;
+}
