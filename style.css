@@ -22,11 +22,36 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-/* Change nav background color, set navbar height for selections */
+/* Change nav background color, set navbar height and width for selections */
 
 nav{
     background : #F4C95D;
+    color: green;
     height: 80px;
+    width: 100%;
 
+}
+
+/* Pushes Pier Carson logo over to the right from edge */
+/* Need to adjust outside border color of logo  */
+
+label.logo {
+    padding: 0 100px;
+}
+
+/* Pushes the nav menu to the far right with padding */
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+/* Using Inline-block in order to specify height.  Can't do that with display inline */
+/* Also added padding to push away from edge */
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
 
