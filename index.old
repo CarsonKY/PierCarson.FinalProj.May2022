@@ -12,16 +12,10 @@
     
   
   <link rel="stylesheet" href="style.css" />
-  <!-- Needed for hamburger menu -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <!-- font awesome hamburger class icon -->
-            <i class="fas fa-bars"></i>
-            </label>
         <label class="logo">Carson</label>
     
     <ul class="menu-items">
@@ -29,7 +23,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#visitus">Visit Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>f
     </ul>
 
         <!--          ------->
