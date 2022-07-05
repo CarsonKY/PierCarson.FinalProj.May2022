@@ -17,7 +17,8 @@ body{
 }
 /* Change nav background color, set navbar height and width for selections */
 nav{
-  background : #F4C95D;
+  /* background : #F4C95D; */
+  background: linear-gradient(to left, #f46b45, #eea849);
   color: green;
   height: 80px;
   width: 100%;
