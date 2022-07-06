@@ -1,5 +1,7 @@
 /* Import all font sizes and shapes of Quicksand font */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 
 /* Set default box sizing padding html size and font*/
 
@@ -24,12 +26,13 @@ nav{
   height:80px;
   background: rgb(20,133,172);
 background: radial-gradient(circle, rgba(20,133,172,1) 0%, rgba(0,35,70,1) 100%);
-  color: white;
+  color: yellowgreen;
    margin: auto;
   display: flex;
   justify-content:space-around;
   align-items: center;
-  font-family: 'Quicksand', sans-serif;
+  text-decoration: solid;
+  font-family: 'Maison Neue', sans-serif;
 /* Pushes Pier Carson logo away from edge */
 /* Need to adjust outside border color of logo  */
 
@@ -64,11 +67,12 @@ nav ul li {
 /* Change Nav Bar anchor colors, convert to uppercase for readability */
 
 nav ul li a{
-  color: green;
+  color: white;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
+  font-family: 'Maison Neue', sans-serif;
 }
 
 /* Initial Active NavBar specified in HTML */
