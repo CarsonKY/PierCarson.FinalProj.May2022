@@ -17,6 +17,11 @@
 
 }
 
+html {
+  background-color: #BFBFBF;
+  height: 100%;
+}
+
 body{
   font-family: "Quicksand", sans-serif; 
  
