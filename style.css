@@ -156,19 +156,21 @@ a.active,a:hover{
   }
   nav ul li{
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
+    margin: 0 5px;
+    line-height: 80px;
   }
   nav ul li a{
     font-size: 20px;
+
     
   }
 
   /* When mouse is over a menu item, highlight a different color */
 
   a:hover,a.active{
-    background: none;
+    background: rgb(223, 138,138);
     color: #0082e6;
+    transition: .5s;
   }
   #check:checked ~ ul{
     left: 0;
@@ -215,7 +217,7 @@ section{
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 400px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
