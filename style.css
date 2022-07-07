@@ -134,6 +134,9 @@ a.active,a:hover{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    background: url(images/foodimage2.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
   }
   nav ul li{
     display: block;
@@ -142,6 +145,7 @@ a.active,a:hover{
   }
   nav ul li a{
     font-size: 20px;
+    
   }
 
   /* When mouse is over a menu item, highlight a different color */

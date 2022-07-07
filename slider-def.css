@@ -15,7 +15,17 @@
   position:relative;
   -webkit-animation:slide 30s infinite;
   -moz-animation:slide 30s infinite;
-  animation:slide 30s infinite;
+  animation:slide 30s infinite; 
+}
+
+@media (max-width: 858px){
+
+  *{margin:0;padding:0;}
+  .slides{
+    animation:off;
+    display: none;
+  }
+  
 }
 .slider{
   width:25%;
