@@ -179,7 +179,7 @@ section{
 
   /* ABOUT US CSS */
 
-  * Style the Image Used to Trigger the Modal */
+  /* Style the Image Used to Trigger the Modal */
 #myImg {
   border-radius: 5px;
   cursor: pointer;
