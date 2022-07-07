@@ -50,13 +50,14 @@ background: radial-gradient(circle, rgba(20,133,172,1) 0%, rgba(0,35,70,1) 100%)
 
 }
 label.logo{
-  color: white;
-  
+   
   height: 60px;
   padding: 0 100px;
   
   
 }
+
+/* H1 Welcome at start of page */
 
 #welcome {
   background-color: #cfbbb4;
