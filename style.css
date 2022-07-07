@@ -44,10 +44,11 @@ background: radial-gradient(circle, rgba(20,133,172,1) 0%, rgba(0,35,70,1) 100%)
 }
 label.logo{
   color: white;
-  font-size: 35px;
-  line-height: 80px;
+  
+  height: 60px;
   padding: 0 100px;
-  font-weight: bold;
+  
+  
 }
 
 /* Flex display for easy */
@@ -121,9 +122,12 @@ a.active,a:hover{
 /* At 858px activate hamburger menu in vertical block in a slow transition l-r*/
 
 
-@media (max-width: 858px){
+@media (max-width: 900px){
+
+  
   .checkbtn{
     display: block;
+    
   }
   ul{
     position: fixed;
@@ -134,9 +138,8 @@ a.active,a:hover{
     left: -100%;
     text-align: center;
     transition: all .5s;
-    background: url(images/foodimage2.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
+    
+   
   }
   nav ul li{
     display: block;
