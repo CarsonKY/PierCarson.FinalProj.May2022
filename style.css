@@ -40,7 +40,8 @@ background: radial-gradient(circle, rgba(20,133,172,1) 0%, rgba(0,35,70,1) 100%)
   align-items: center;
   text-decoration: solid;
   font-family: 'Maison Neue', sans-serif;
-  position: fixed;
+  z-index: 6;
+  top: 0;
   position: sticky;
 
 /* Pushes Pier Carson logo away from edge */
