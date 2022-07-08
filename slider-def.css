@@ -18,6 +18,8 @@
   animation:slide 30s infinite; 
 }
 
+/* Don't initiate slider if screen to small */
+
 @media (max-width: 858px){
 
   *{margin:0;padding:0;}
