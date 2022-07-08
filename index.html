@@ -19,6 +19,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
   <link rel="stylesheet" href="slider-def.css">
   <link rel="stylesheet" href="aboutus.css">
+  <script type="text/javascript" src="aboutus.js"></script>
 </head>
 <body>
     <nav>
@@ -113,109 +114,74 @@
     <!-- ------------------ END HOME ------------------ -->
 
     <!-- ------------------ ABOUT US ------------------ -->
+    <h2 style="text-align:center">ABOUT US</h2>
 
-     <!-- Trigger the Modal -->
-<img id="myImg" src="images/aboutus1.donstreble.execchef.jpg" alt="Don Is the Executive Chef of Pier Carson with 20 years experience" style="width:100%;max-width:200px">
-
-<!-- The Modal -->
-<div id="about"></div>
-<div id="myModal" class="modal">
-
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div> 
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+    <div class="row">
+      <div class="column">
+        <img src="images/piercarsonnav.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/piercarsonnav.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/piercarsonnav.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/piercarsonnav.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
     
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
     
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/piercarsonnav.JPG" style="width:100%">
+        </div>
     
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
-
-    }
-// When the user clicks on <span> (x), close the modal
-
-    // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/piercarsonnav.JPG" style="width:100%">
+        </div>
     
-    </script>
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/piercarsonnav.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/piercarsonnav.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="images/piercarsonnav.jpg" style="width:10%" onclick="currentSlide(1)" alt="About Us Picture One">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/piercarsonnav.jpg" style="width:10%" onclick="currentSlide(2)" alt="About Us Picture Two">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/piercarsonnav.jpg" style="width:10%" onclick="currentSlide(3)" alt="About Us Picture Three">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/piercarsonnav.jpg" style="width:10%" onclick="currentSlide(4)" alt="About Us Picture Four">
+        </div>
+      </div>
+    </div>
+    
 
-<!-- Image Two -->
 
-     <!-- Trigger the Modal -->
-     <img id="myImg2" src="images/aboutus2.leslieturner.genmanager.JPG" alt="Don Is the Executive Chef of Pier Carson with 20 years experience" style="width:100%;max-width:200px">
 
-     <!-- The Modal -->
-     <div id="about"></div>
-     <div id="myModal2" class="modal">
      
-       <!-- The Close Button -->
-       <span class="close">&times;</span>
-     
-       <!-- Modal Content (The Image) -->
-       <img class="modal-content" id="img02">
-     
-       <!-- Modal Caption (Image Text) -->
-       <div id="caption"></div>
-     </div> 
-     
-     <script>
-         // Get the modal
-         var modal = document.getElementById("myModal2");
-         
-         // Get the image and insert it inside the modal - use its "alt" text as a caption
-         var img = document.getElementById("myImg2");
-         var modalImg = document.getElementById("img02");
-         var captionText = document.getElementById("caption");
-         img.onclick = function(){
-           modal.style.display = "block";
-           modalImg.src = this.src;
-           captionText.innerHTML = this.alt;
-         }
-         
-         // Get the <span> element that closes the modal
-         var span = document.getElementsByClassName("close")[0];
-         
-         // When the user clicks on <span> (x), close the modal
-         span.onclick = function() { 
-           modal.style.display = "none";
-     
-         }
-     // When the user clicks on <span> (x), close the modal
-     
-         // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event) {
-       if (event.target == modal) {
-         modal.style.display = "none";
-       }
-     }
-         
-         </script>
-
 
 
 
