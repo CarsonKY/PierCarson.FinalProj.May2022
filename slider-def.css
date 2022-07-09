@@ -25,7 +25,10 @@
   *{margin:0;padding:0;}
   .slides{
     animation:off;
-    display: none;
+    
+    background: url(images/foodimage1.jpg) no-repeat;
+    
+
   }
   
 }
@@ -80,6 +83,12 @@
   -moz-animation:content-s 7.5s infinite;
   animation:content-s 7.5s infinite;
 }
+
+@media (max-width: 858px){
+  .content-txt{
+    animation-play-state: paused;
+  }
+}
 .content-txt h1{
   font-family:Intro;
   font-size:24px;
@@ -87,6 +96,7 @@
   text-align:left;
   margin-left:30px;
   padding-bottom:10px;
+  
 }
 .content-txt h2{
   font-family:Quicksand;
