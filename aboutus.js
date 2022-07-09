@@ -36,3 +36,9 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
+ // When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+  if (event.target == modal-content) {
+    currentSlide(n)  = "none";
+  }
+}

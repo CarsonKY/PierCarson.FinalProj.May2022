@@ -33,11 +33,11 @@
         
 
     <ul class="menu-items">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#visitus">Visit Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#home"  class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#visitus" class="nav-link">Visit Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
     </ul>
     <embed src="/media/beachsounds.mp3" loop="true" autostart="false" width="160" height="60">
         <!--          ------->
@@ -57,8 +57,8 @@
         <div class="legend"></div>
         <div class="content">
         <div class="content-txt">
-        <h1> Pier Carson title one </h1>
-        <h2> Pier Carson description </h2>
+        <h1> Full Bar at Pier Carson </h1>
+        <h2> Have a drink with your friends! </h2>
         </div>
         </div>
         <div class="images">
@@ -118,16 +118,16 @@
 
     <div class="row">
       <div class="column">
-        <img src="images/piercarsonnav.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <img src="images/aboutus1.donstreble.execchef.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
       <div class="column">
-        <img src="images/piercarsonnav.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        <img src="images/aboutus2.leslieturner.genmanager.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
       </div>
       <div class="column">
-        <img src="images/piercarsonnav.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        <img src="images/aboutus3.steven.armbruster.beveragemanager.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
       </div>
       <div class="column">
-        <img src="images/piercarsonnav.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        <img src="images/aboutus4.brianjones.genmanager.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
       </div>
     </div>
     
@@ -192,5 +192,18 @@
 
     
 </div>
+
+<script>
+
+  // Close Hamburger after choosing menu option
+
+  const hamburger = document.querySelector(".hamburger")
+  const navMenu = document.querySelector(".nav-link")
+  
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    menu-items.classList.remove("active");
+}))
+</script>
 </body>
 </html>

@@ -175,12 +175,10 @@ a.active,a:hover{
   }
   #check:checked ~ ul{
     left: 0;
+    
+    
   }
-
-  .button:active:after {
-    left: 0;
-    display:none;
-  }
+  
 }
 
 /* For later, try to change basic color to img in hamburger */
