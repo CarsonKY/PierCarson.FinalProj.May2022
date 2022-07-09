@@ -153,12 +153,14 @@ a.active,a:hover{
     text-align: center;
     transition: all .5s;
     
+    
    
   }
   nav ul li{
     display: block;
     margin: 50px 0;
     line-height: 30px;
+    
   }
   nav ul li a{
     font-size: 20px;
@@ -166,15 +168,21 @@ a.active,a:hover{
     
   }
 
+  
   /* When mouse is over a menu item, highlight a different color */
 
-  a:hover,a.active{
+  a:hover {
     background: none;
     color: #0082e6;
+    background: black;
+
     
   }
+
   #check:checked ~ ul{
     left: 0;
+
+    
     
     
   }

@@ -114,6 +114,7 @@
     <!-- ------------------ END HOME ------------------ -->
 
     <!-- ------------------ ABOUT US ------------------ -->
+    <div id="about"></div>
     <h2 style="text-align:center">ABOUT US</h2>
 
     <div class="row">
@@ -198,11 +199,11 @@
   // Close Hamburger after choosing menu option
 
   const hamburger = document.querySelector(".hamburger")
-  const navMenu = document.querySelector(".nav-link")
+  const navMenu = document.querySelector("a")
   
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll("a").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
-    menu-items.classList.remove("active");
+    navMenu.classList.remove("active");
 }))
 </script>
 </body>
