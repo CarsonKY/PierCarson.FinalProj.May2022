@@ -18,7 +18,8 @@
 }
 
 html {
-  background-color: #BFBFBF;
+  /* background-color: #BFBFBF; */
+  background-color:rgb(228, 196, 157);
   height: 100%;
 }
 
@@ -63,6 +64,11 @@ label.logo{
 #welcome {
   background-color: #cfbbb4;
   font-family: "Quicksand", sans-serif; 
+  color: black;
+  
+  font-family: Seaweed, sans-serif;
+  text-align: center;
+  
   
 }
 /* Flex display for easy */

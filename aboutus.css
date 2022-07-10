@@ -11,11 +11,14 @@
 }
 .heading {
   color: black;
+  background-color:bisque;
   font-family: Seaweed, sans-serif;
   text-align: center;
   font-size: 2em;
   margin: 2em 0;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  
+  
   
 }
 
@@ -25,6 +28,7 @@ figure {
   text-align: center;
   font-size: 2em;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-color:bisque;
   /*   */
   /* box-shadow: 0px 13px 10px black; */
 
