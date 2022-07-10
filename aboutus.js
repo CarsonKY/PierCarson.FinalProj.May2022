@@ -1,3 +1,4 @@
+
 const images = document.querySelectorAll(".aboutmeimg");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modalImg");
