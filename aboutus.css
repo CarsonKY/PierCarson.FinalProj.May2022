@@ -6,6 +6,7 @@
 @import url('https://db.onlinewebfonts.com/c/79927a8d010a79419f5c30e4d87409d5?family=Visby+CF+Medium');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Seaweed+Script&display=swap');
 
+
 .html {
   background-color: green;
 }
@@ -41,8 +42,9 @@ figure {
   padding-bottom: 10px;
   /* grid-template-columns: repeat(3, 1fr); */
   justify-content: space-around;
-  margin: 0 1em;
+  
   align-items: stretch;
+  margin: 5px 5px;
 }
 .images aboutmeimg {
   
