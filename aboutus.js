@@ -1,44 +1,17 @@
+const imagesam = document.querySelectorAll(".imagesam img");
+const modal = document.querySelector(".modal");
+const modalImg = document.querySelector(".modalImg");
+const modalTxt = document.querySelector(".modalTxt");
+const closeam = document.querySelector(".closeam");
 
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
+imagesam.forEach((image) => {
+  image.addEventListener("click", () => {
+    modalImg.src = image.src;
+    modalTxt.innerHTML = image.alt;
+    modal.classList.add("appear");
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-
- // When the user clicks anywhere outside of the modal, close it
- window.onclick = function(event) {
-  if (event.target == modal-content) {
-    currentSlide(n)  = "none";
-  }
-}
+    closeam.addEventListener("click", () => {
+      modal.classList.remove("appear");
+    });
+  });
+});
