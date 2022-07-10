@@ -42,6 +42,7 @@ figure {
   padding-bottom: 10px;
   /* grid-template-columns: repeat(3, 1fr); */
   justify-content: space-around;
+  gap: 20px;
   
   align-items: stretch;
   margin: 5px 5px;
