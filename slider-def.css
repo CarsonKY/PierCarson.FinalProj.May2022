@@ -86,7 +86,14 @@
 
 @media (max-width: 858px){
   .content-txt{
+    
+    transition-duration: 30s;
     animation-play-state: paused;
+    transition-duration: 30s;
+    -webkit-animation-delay: 42s;
+  -moz-animation-delay: 42s;
+  -ms-animation-delay: 42s;
+  animation-delay: 42s;
   }
 }
 .content-txt h1{
