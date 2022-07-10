@@ -35,9 +35,14 @@ figure {
 }
 .images {
   display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   /* grid-template-columns: repeat(3, 1fr); */
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 0 1em;
+  align-items: stretch;
 }
 .images aboutmeimg {
   
