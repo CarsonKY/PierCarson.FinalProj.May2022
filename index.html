@@ -61,7 +61,7 @@
         <h2> Have a drink with your friends! </h2>
         </div>
         </div>
-        <div class="images">
+        <div class="imageshome">
         <img src="Images/Jquery.image4.JPG">
         </div>
         </div>
@@ -75,7 +75,7 @@
         <h2> Pier Carson description </h2>
         </div>
         </div>
-        <div class="images">
+        <div class="imageshome">
         <img src="Images/Jquery.image3.JPG">
         </div>
         </div>
@@ -89,7 +89,7 @@
         <h2> Pier Carson description  </h2>
         </div>
         </div>
-        <div class="images">
+        <div class="imageshome">
         <img src="Images/Jquery.image2.JPG">
         </div>
         </div>
@@ -103,7 +103,7 @@
         <h2> We hope you enjoy your stay </h2>
         </div>
         </div>
-        <div class="images">
+        <div class="imageshome">
         <img src="Images/Jquery.image1.JPG">
         </div>
         </div>
@@ -114,17 +114,19 @@
     <!-- ------------------ END HOME ------------------ -->
 
     <!-- ------------------ ABOUT US ------------------ -->
-    <div class="container">
+    <div id="about"></div>
+    <div class="aboutus">
       <div class="heading">About Us</div>
-      <div class="imagesam">
-        <img src="images/aboutus1.donstreble.execchef.jpg" alt="Don Streble has 20 years experience" />
-        <img src="images/aboutus2.leslieturner.genmanager.JPG" alt="Don Streble has 20 years experience" />
-        <img src="images/aboutus3.steven.armbruster.beveragemanager.JPG" alt="Don Streble has 20 years experience" />
-        <img src="images/aboutus4.brianjones.genmanager.JPG" alt="Don Streble has 20 years experience" />
+      <div class="images">
+        <img class="aboutmeimg" src="images/aboutus1.donstreble.execchef.jpg" alt="River" />
+        <img class="aboutmeimg" src="images/aboutus2.leslieturner.genmanager.JPG" alt="River" />
+        <img class="aboutmeimg" src="images/aboutus3.steven.armbruster.beveragemanager.JPG" alt="River" />
+        <img class="aboutmeimg" src ="images/aboutus4.brianjones.genmanager.JPG" alt="River" />
+        
         
       </div>
       <div class="modal">
-        <span class="closeam"><i class="fas fa-times"></i></span>
+        <span class="close"><i class="fas fa-times"></i></span>
         <div class="modalContent">
           <img src="" class="modalImg" />
           <span class="modalTxt"></span>
@@ -132,22 +134,29 @@
       </div>
     </div>
     
+    
     <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
       </div>
     
 
 <script>
+const images = document.querySelectorAll(".aboutmeimg");
+const modal = document.querySelector(".modal");
+const modalImg = document.querySelector(".modalImg");
+const modalTxt = document.querySelector(".modalTxt");
+const close = document.querySelector(".close");
 
-  // Close Hamburger after choosing menu option
-  // Git push try 2
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    modalImg.src = image.src;
+    modalTxt.innerHTML = image.alt;
+    modal.classList.add("appear");
 
-  const hamburger = document.querySelector(".hamburger")
-  const navMenu = document.querySelector("a")
-  
-document.querySelectorAll("a").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
+    close.addEventListener("click", () => {
+      modal.classList.remove("appear");
+    });
+  });
+});
 </script>
 </body>
 </html>

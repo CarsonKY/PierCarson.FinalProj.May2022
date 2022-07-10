@@ -5,18 +5,18 @@
   font-size: 2em;
   margin: 2em 0;
 }
-.imagesam {
-  display: grid;
+.images {
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
   margin: 0 1em;
 }
-.imagesam img {
+.images img {
   width: 100%;
   cursor: pointer;
   transition: 0.3s all ease;
 }
-.imagesam img:hover {
+.images img:hover {
   transform: scale(0.9);
 }
 .modal {
@@ -46,7 +46,7 @@
 .modalTxt {
   margin-top: 1em;
 }
-.closeam {
+.close {
   position: absolute;
   top: 1em;
   right: 1.5em;
