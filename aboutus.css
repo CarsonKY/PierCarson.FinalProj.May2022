@@ -7,9 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Seaweed+Script&display=swap');
 
 
-.html {
-  background-color: green;
-}
+
 .heading {
   color: black;
   background-color:bisque;
@@ -42,7 +40,7 @@ figure {
   padding-bottom: 10px;
   /* grid-template-columns: repeat(3, 1fr); */
   justify-content: space-around;
-  gap: 20px;
+  gap: 20px 5px;
   
   align-items: stretch;
   margin: 5px 5px;
