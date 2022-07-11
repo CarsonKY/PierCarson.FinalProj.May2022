@@ -12,10 +12,11 @@
 <link href="http://fonts.cdnfonts.com/css/maison-neue" rel="stylesheet">
 <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>  
-<script src="closeham"></script>  
+ 
     
   
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contactus.css" />
   <!-- Needed for hamburger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
@@ -146,6 +147,7 @@
           <div class="heading">MENU</div>
 
       </div>
+      <div id="menu"></div>
       <div class="modal">
         <span class="close"><i class="fas fa-times"></i></span>
         
@@ -156,6 +158,40 @@
       </div>
     </div>
     
+<!-- -------------- CONTACT FORM  -------------- -->
+
+<div id="menu"></div>
+        <div class="pcmenu">
+          <div class="heading">CONTACT US!</div>
+
+      </div>
+
+    <form method="post" action="contact.php" name="contactform" id="contactform">
+      <div class="col-md-offset-1 col-md-5">
+        <fieldset>
+          <input name="name" type="text" id="name" size="30" placeholder="Name">
+          <br>
+          <input name="email" type="text" id="email" size="30" placeholder="Email">
+          <br>
+          <input name="phone" type="text" id="phone" size="30" placeholder="Phone">
+          <br>
+          
+        </fieldset>
+      </div>
+      <div class="col-md-5">
+        <fieldset>
+          <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Message"></textarea>
+        </fieldset>
+      </div>
+      <div class="col-md-offset-1 col-md-10">
+        <fieldset>
+          <button type="submit" class="btn btn-lg" id="submit" value="Submit">Send Message</button>
+        </fieldset>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     
     <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
       </div>
