@@ -1,0 +1,1 @@
+$(this).find('ul').hide();
