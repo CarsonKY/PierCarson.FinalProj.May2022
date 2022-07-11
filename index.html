@@ -41,7 +41,7 @@
         
 
     <ul class="menu-items">
-        <li><a id="homelink" href="#home"  class="nav-link">Home</a></li>
+        <li><a id="homelink" href="#home">Home</a></li>
         <li><a id="aboutlink" href="#about" class="nav-link">About</a></li>
         <li><a id="menulink" href="#menu" class="nav-link">Menu</a></li>
         <li><a id="visitlink" href="#visitus" class="nav-link">Visit Us</a></li>
@@ -230,16 +230,18 @@ images.forEach((image) => {
 </script>
 
 <script>
+
+
+// DON,  Here is the current script with HOME being the only one currently affected for testing purposes.
+
+
   const button = document.getElementById('homelink');
 
   button.addEventListener('click', function() {
-    
     $('ul').hide();;
-    document.getElementById("check").checked = false;
-  
-  
-});
-  
+    document.getElementById("ul").style.left = "-100px"
+})
+
 
 </script>
 
