@@ -1,11 +1,8 @@
 /* Import all font sizes and shapes of Quicksand font */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://db.onlinewebfonts.com/c/79927a8d010a79419f5c30e4d87409d5?family=Visby+CF+Medium');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Seaweed+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
-
-
 
 /* Set default box sizing padding html size and font*/
 
@@ -31,7 +28,7 @@ body{
 }
 /* Change nav background color, set navbar height and width for selections */
 nav{
-  /* background : #F4C95D; */
+
   width:100%;
   height:80px;
   background: rgb(20,133,172);
@@ -48,31 +45,24 @@ background: radial-gradient(circle, rgba(20,133,172,1) 0%, rgba(0,35,70,1) 100%)
   position: sticky;
 
 /* Pushes Pier Carson logo away from edge */
-/* Need to adjust outside border color of logo  */
-
-/* Currently testing with plain text due to issues */
 
 }
 label.logo{
    
   height: 60px;
   padding: 0 100px;
-  
-  
+    
 }
 
-/* H1 Welcome at start of page */
+/* H1 Welcome at start of page but hidden for empty border*/
 
 #welcome {
-  background-color: #cfbbb4;
-  font-family: "Quicksand", sans-serif; 
+  background-color: rgb(228, 196, 157);
+  /* font-family: "Quicksand", sans-serif; 
   color: black;
-  font-family: 'Rouge Script', cursive;
-  
-  
-  text-align: center;
-  
-  
+    text-align: center; */
+    visibility: hidden;
+    
 }
 /* Flex display for easy */
 
@@ -81,7 +71,7 @@ nav ul{
   margin-right: 20px;
 }
 
-/* Using Inline-block in order to specify height.  Can't do that with display inline */
+/* Using Inline-block in order to specify height.*/
 /* Also added padding to push away from edge */
 
 
@@ -117,8 +107,6 @@ a.active,a:hover{
 .checkbtn {
   font-size: 30px;
   color: #F2D2BD;
-  
-  
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -135,10 +123,7 @@ a.active,a:hover{
 /* If width less than 952px use less padding and initiate hamburger */
 
 @media (max-width: 952px){
-  /* label.logo{
-    font-size: 30px;
-    padding-left: 150px;
-  } */
+  
   ul li a{
     font-size: 16px;
   }
@@ -148,7 +133,6 @@ a.active,a:hover{
 
 
 @media (max-width: 900px){
-
   
   .checkbtn{
     display: block;
@@ -163,9 +147,7 @@ a.active,a:hover{
     left: -100%;
     text-align: center;
     transition: all .5s;
-    
-    
-   
+ 
   }
   nav ul li{
     display: block;
@@ -176,25 +158,20 @@ a.active,a:hover{
   nav ul li a{
     font-size: 20px;
 
-    
   }
-
-  
+ 
   /* When mouse is over a menu item, highlight a different color */
 
   a:hover {
     background: none;
     color: #0082e6;
     background: black;
-
-    
+   
   }
 
   #check:checked ~ ul{
     left: 0;
 
-    
-    
     
   }
   
