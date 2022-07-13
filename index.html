@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 <link href="http://fonts.cdnfonts.com/css/maison-neue" rel="stylesheet">
 <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>  
+<!-- <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>   -->
  
     
   
@@ -30,7 +30,7 @@
   
 </head>
 <body>
-    <nav>
+    <nav id="mainmenu">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <!-- font awesome hamburger class icon -->
@@ -41,7 +41,7 @@
         
 
     <ul class="menu-items">
-        <li><a id="homelink" href="#home">Home</a></li>
+        <li><a id="homelink" href="#home" class="nav-link">Home</a></li>
         <li><a id="aboutlink" href="#about" class="nav-link">About</a></li>
         <li><a id="menulink" href="#menu" class="nav-link">Menu</a></li>
         <li><a id="visitlink" href="#visitus" class="nav-link">Visit Us</a></li>
@@ -232,14 +232,20 @@ images.forEach((image) => {
 <script>
 
 
-// DON,  Here is the current script with HOME being the only one currently affected for testing purposes.
+// Here is the current script with HOME being the only one currently affected for testing purposes.
 
 
-  const button = document.getElementById('homelink');
+  const buttons = document.querySelectorAll(".nav-link");
+  buttons.forEach(button => {
+    button.addEventListener('click',function(event) {
+       document.getElementById('check').checked=false;
+       
 
-  button.addEventListener('click', function() {
-    $('ul').hide();;
-    document.getElementById("ul").style.left = "-100px"
+    })
+
+    // if (button. getElementByID('c'). clicked==review.classlist.contains())
+    // $('ul').hide();;
+    // document.getElementById("ul").style.left = "-100px"
 })
 
 
