@@ -37,15 +37,14 @@ figure {
 .images {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  
   /* grid-template-columns: repeat(3, 1fr); */
   justify-content: space-around;
   gap: 20px 5px;
   
   align-items: stretch;
   margin: 5px 5px;
+  
 }
 .images aboutmeimg {
   
@@ -58,6 +57,11 @@ figure {
 
 .images img:hover {
   transform: scale(0.9);
+  transition: transform .5s ease-in-out;
+
+  
+  
+  
 }
 .modal {
   position: fixed;
