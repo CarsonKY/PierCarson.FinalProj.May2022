@@ -4,8 +4,9 @@ var app = new Vue({
         let vm = this
         axios
             .get(
-                'https://sheets.googleapis.com/v4/spreadsheets/1zIVCVA0Tk5CvAiTyeAdDBPygT3aKDiSeM2FbPU0JO2c/values/Specials!A2:C20?key=AIzaSyBhiqVypmyLHYPmqZYtvdSvxEopcLZBdYU'
-                // 'https://sheets.googleapis.com/v4/spreadsheets/1VZ2XZh-wwoMAta6OEiR_sKz-i4EVY_ayQsd7IOJu47s'
+                // 'https://sheets.googleapis.com/v4/spreadsheets/1zIVCVA0Tk5CvAiTyeAdDBPygT3aKDiSeM2FbPU0JO2c/values/Specials!A2:C20?key=AIzaSyBhiqVypmyLHYPmqZYtvdSvxEopcLZBdYU'
+                'https://sheets.googleapis.com/v4/spreadsheets/1VZ2XZh-wwoMAta6OEiR_sKz-i4EVY_ayQsd7IOJu47s/values/Specials!A2:C20?key=AIzaSyBYb5dwbN_p9PIGuQeWjjrW-KOjDUyKM0w'
+                // 'https://docs.google.com/spreadsheets/d/        1VZ2XZh-wwoMAta6OEiR_sKz-i4EVY_ayQsd7IOJu47s
             )
             .then(function (response) {
                 let specials = response.data.values
