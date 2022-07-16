@@ -116,9 +116,28 @@ figure {
   
 }
 
+@media (max-width: 900px){
+  
+  
+figure {
+  /* display: block; */
+  font-family: Quicksand;
+  color: gray;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-color:bisque;
+  padding-bottom: 170px;
+  
+    
+  }
+}
+
 .hidden {
   display: none;
 }
+
+
 @keyframes zoom {
   from {
     transform: scale(0);
