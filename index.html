@@ -156,7 +156,7 @@
         <link href="https://fonts.googleapis.com/css?family=Damion|Quicksand" rel="stylesheet"><link rel="stylesheet" href="./menustyle.css">
         <div id="menu"></div>
         <div class="pcmenu">
-          <div class="heading">MENU</div>
+          <div class="heading"></div>
           
     </div>
 
@@ -168,7 +168,7 @@
     <div id="app">
             <section id="specialssection" class="specials-container" v-if="menuItems_L" :style="menuStyle">
                 <div id="special_component" :style="menuStyle">
-                    <h1>Daily Specials</h1>
+                    <h1 class="menuspecials">Daily Specials</h1>
                     <div class="specials-table-container">
                         <table>
                             <tbody v-for="item in menuItems_L" :key="`specialmenu-${item.name}`">

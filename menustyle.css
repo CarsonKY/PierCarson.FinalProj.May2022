@@ -57,13 +57,26 @@ a{
     max-width: 1500px;
     margin: 40px auto;
 }
-/*
-h1 {
+
+.menuspecials {
     font-family: "Damion", cursive;
     font-size: 50px;
     font-weight: 100;
     line-height: 25px;
-} */
+    padding-top: 80px;
+} 
+
+#menuheading
+    {
+        color: black;
+        background-color:bisque;
+        font-family: Seaweed, sans-serif;
+        text-align: center;
+        font-size: 2em;
+        margin: 2em 0;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        gap: 20px;
+    }
 
 .nameandprice td {
     padding: 1em 0 0 0;
