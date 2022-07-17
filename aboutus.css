@@ -127,12 +127,25 @@ figure {
   font-size: 2em;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   background-color:bisque;
-  padding-bottom: 170px;
+  padding-bottom: 90px;
   
     
   }
 }
 
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* grid-template-columns: repeat(3, 1fr); */
+  justify-content: space-around;
+  gap: 20px 5px;
+  
+  align-items: stretch;
+  margin: 5px 5px;
+  padding: 50px;
+  
+}
 .hidden {
   display: none;
 }
