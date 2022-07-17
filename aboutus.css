@@ -44,7 +44,7 @@ figure {
   
   align-items: stretch;
   margin: 5px 5px;
-  padding-bottom: 200px;
+  padding-bottom: 80px;
 }
 .images aboutmeimg {
   
@@ -156,13 +156,14 @@ figure {
 
 }
 
-@media (min-width: 901px){
+
+   @media (min-width: 901px) and (max-width: 992px){
 
 
   .images {
-    padding-bottom: 20px;
+    padding-bottom: 200px;
   }
-}
+} 
 @keyframes zoom {
   from {
     transform: scale(0);
