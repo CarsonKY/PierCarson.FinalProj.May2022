@@ -44,9 +44,10 @@ figure {
   
   align-items: stretch;
   margin: 5px 5px;
-  
+  padding-bottom: 200px;
 }
 .images aboutmeimg {
+  
   
   width: 80%;
   cursor: pointer;
@@ -121,17 +122,19 @@ figure {
   
 figure {
   /* display: block; */
+  display:block;  
   font-family: Quicksand;
   color: gray;
   text-align: center;
   font-size: 2em;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   background-color:bisque;
-  padding-bottom: 90px;
+  /* padding-bottom: 180px; */
+  
   
     
   }
-}
+
 
 .images {
   display: flex;
@@ -143,14 +146,23 @@ figure {
   
   align-items: stretch;
   margin: 5px 5px;
-  padding: 50px;
+  padding-bottom: 200px;
   
 }
+
 .hidden {
   display: none;
 }
 
+}
 
+@media (min-width: 901px){
+
+
+  .images {
+    padding-bottom: 20px;
+  }
+}
 @keyframes zoom {
   from {
     transform: scale(0);

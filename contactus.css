@@ -60,18 +60,3 @@ html .contact {
     background: rgba(51, 51, 51, 0.7);
   }
   
-
-  @media (max-width: 900px){
-  .contactheading {
-    color: black;
-    background-color:bisque;
-    font-family: Seaweed, sans-serif;
-    text-align: center;
-    font-size: 2em;
-    margin: 2em 0;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    
-    
-    
-  }
-}
