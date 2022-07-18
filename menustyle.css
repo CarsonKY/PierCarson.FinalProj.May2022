@@ -127,6 +127,7 @@ td:last-child span {
     .specials-table-container {
         display: flex;
         margin: 0px auto;
+        
     }
 }
 
