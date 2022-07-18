@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,10 +24,7 @@
     
   <link rel="stylesheet" href="slider-def.css">
   <link rel="stylesheet" href="aboutus.css">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png>
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
 
   
 </head>
@@ -37,7 +36,7 @@
             <i class="fa fa-bars"></i>
             
             </label>
-        <img class="logo" src="images/piercarsonnav2.PNG" alt="Pier Carson" width="120px">
+        <img class="logo" src="Images/piercarsonnav2.png" alt="Pier Carson" width="120px">
         
 
     <ul class="menu-items">
@@ -126,20 +125,20 @@
       <div class="heading">ABOUT US</div>
       <div class="images">
         <figure>
-        <img class="aboutmeimg" src="images/crop1.aboutus1.chrisstreble.execchef.png" alt="Chris Streble has 20 years experience cooking amazing dishes" />
+        <img class="aboutmeimg" src="Images/crop1.aboutus1.chrisstreble.execchef.png" alt="Chris Streble has 20 years experience cooking amazing dishes" />
         <figcaption> Christopher Streble</figcaption>
         <figcaption>   Executive Chef  </figcaption></figure>
         <figure>
-        <img class="aboutmeimg" src="images/crop2.aboutus2.leslieturner.genmanager.png" alt="Leslie brings a wealth of experience to Pier Carson" />
+        <img class="aboutmeimg" src="Images/crop2.aboutus2.leslieturner.genmanager.png" alt="Leslie brings a wealth of experience to Pier Carson" />
         <figcaption> Leslie Turner</figcaption>
         <figcaption> General Manager</figcaption>
         </figure>
         <figure>
-        <img class="aboutmeimg" src="images/crop3.aboutus3.steven.armbruster.beveragemanager.png" alt="Steven has a masters in business administration" />
+        <img class="aboutmeimg" src="Images/crop3.aboutus3.steven.armbruster.beveragemanager.png" alt="Steven has a masters in business administration" />
         <figcaption> Steven Armbruster</figcaption>
         <figcaption> Bar Manager</figcaption></figure>
         <figure>
-        <img class="aboutmeimg" src ="images/crop4.aboutus4.brianjones.genmanager.png" alt="Brian has been with the company for nine years" />
+        <img class="aboutmeimg" src ="Images/crop4.aboutus4.brianjones.genmanager.png" alt="Brian has been with the company for nine years" />
         <figcaption> Brian Jones</figcaption>
         <figcaption> Business Manager</figcaption></figure>
         
@@ -221,6 +220,12 @@
 
     <form method="post" action="contact.php" name="contactform" id="contactform">
       <div class="contactform">
+          <!-- Status message -->
+          <?php if(!empty($statusMsg)){ ?>
+            <div class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></div>
+            <?php } ?>
+          
+          }
         <fieldset>
           <input name="name" type="text" id="name" size="30" placeholder="Name">
           <br>
