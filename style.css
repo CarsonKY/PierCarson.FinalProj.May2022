@@ -132,11 +132,11 @@ a.active,a:hover{
 /* At 858px activate hamburger menu in vertical block in a slow transition l-r*/
 
 
-/* @media (max-width: 900px){
-  img#mappicture1{
- { display: none; }
+@media (max-width: 900px){
+
+  .splitscreen .left{
+    display: none;
   }
-} */
   
   .checkbtn{
     display: block;
@@ -179,7 +179,7 @@ a.active,a:hover{
     
   }
   
-
+}
 
  
 /* Map and Directions section */
