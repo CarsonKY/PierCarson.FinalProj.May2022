@@ -134,10 +134,7 @@ a.active,a:hover{
 
 @media (max-width: 900px){
 
-  .splitscreen .left{
-    display: none;
-  }
-  
+   
   .checkbtn{
     display: block;
     
@@ -192,21 +189,38 @@ a.active,a:hover{
 	
   display: flex;
   flex-wrap: wrap;
-  margin :0;
+  margin :0 auto;
   padding: 0;
   
 }
 
-.splitscreen .left,.splitscreen .middle,
-.splitscreen .right {
+.splitscreen .left,.splitscreen .middle, .splitscreen .right
+ {
   
   display: flex;
   flex-wrap: wrap;
   width: 32%;
-	margin: auto;
+	margin: 0 auto;
 	/* height: 100px; */
-	
-	
+
+ }
+
+
+ @media (max-width: 900px){
+ .splitscreen .left
+	{
+	display:none;
   margin :0px;
   padding: 0;
+  justify-content: center;
 } 
+
+ } 
+
+ .splitscreen .middle{
+  justify-content: center;
+ }
+
+ .splitscreen .right{
+  justify-content: center;
+ }
