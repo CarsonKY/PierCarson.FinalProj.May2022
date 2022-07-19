@@ -4,6 +4,7 @@ if($_POST) {
     $visitor_name = "";
     $visitor_email = "";
     $visitor_message = "";
+    $email_title = "";
     $email_body = "<div>";
       
     if(isset($_POST['visitor_name'])) {
@@ -21,16 +22,18 @@ if($_POST) {
                         </div>";
     }
       
-    if(isset($_POST['visitor_phone'])) {
+    if(isset($_POST['visitor_subject'])) {
         $visitor_phone = filter_var($_POST['visitor_phone'], FILTER_UNSAFE_RAW);
         $visitor_phone .= "<div>
-                           <label><b>Visitor's Phone:</b></label>&nbsp;<span>".$visitor_phone."</span>
+                           <label><b>Visitor's Subject:</b></label>&nbsp;<span>".$visitor_phone."</span>
                         </div>";
     }
 
-    if(isset($_POST['Email Title'])) {
-        $email_title = "Message from Pier Carson visitor";
-        
+    if(isset($_POST['email_title'])) {
+        $email_title = filter_var($_POST['email_title'], FILTER_UNSAFE_RAW);
+        $email_body .= "<div>
+                           <label><b>Reason For Contacting Us:</b></label>&nbsp;<span>".$email_title."</span>
+                        </div>";
     }
 
       
