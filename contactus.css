@@ -83,7 +83,7 @@ html .contact {
       font-family: Seaweed, sans-serif;
       text-align: center;
       font-size: 2em;
-      margin-top: 7em;
+      /* margin-top: 7em; */
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
   }      
