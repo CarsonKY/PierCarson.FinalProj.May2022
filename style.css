@@ -132,7 +132,11 @@ a.active,a:hover{
 /* At 858px activate hamburger menu in vertical block in a slow transition l-r*/
 
 
-@media (max-width: 900px){
+/* @media (max-width: 900px){
+  img#mappicture1{
+ { display: none; }
+  }
+} */
   
   .checkbtn{
     display: block;
@@ -175,14 +179,34 @@ a.active,a:hover{
     
   }
   
-}
 
-/* For later, try to change basic color to img in hamburger */
 
-section{
-  background: url(images/foodimage2.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-}
+ 
+/* Map and Directions section */
 
+.splitscreen {
   
+  
+	/* height: 300px; */
+	/* border: 2px solid black; */
+	
+  display: flex;
+  flex-wrap: wrap;
+  margin :0;
+  padding: 0;
+  
+}
+
+.splitscreen .left,.splitscreen .middle,
+.splitscreen .right {
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 32%;
+	margin: auto;
+	/* height: 100px; */
+	
+	
+  margin :0px;
+  padding: 0;
+} 
