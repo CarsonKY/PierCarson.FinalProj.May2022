@@ -220,25 +220,21 @@
 
     <form method="post" action="contact.php" name="contactform" id="contactform">
       <div class="contactform">
-          <!-- Status message -->
-          <?php if(!empty($statusMsg)){ ?>
-            <div class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></div>
-            <?php } ?>
           
-          }
+          
         <fieldset>
-          <input name="name" type="text" id="name" size="30" placeholder="Name">
+          <input name="visitor_name" type="text" id="name" size="30" placeholder="Name">
           <br>
-          <input name="email" type="text" id="email" size="30" placeholder="Email">
+          <input name="visitor_email" type="text" id="email" size="30" placeholder="Email">
           <br>
-          <input name="phone" type="text" id="phone" size="30" placeholder="Phone">
+          <input name="visitor_phone" type="text" id="phone" size="30" placeholder="Phone">
           <br>
           
         </fieldset>
       </div>
       <div class="comments">
         <fieldset>
-          <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Message"></textarea>
+          <textarea name="visitor_message" cols="40" rows="20" id="comments" placeholder="Message"></textarea>
         </fieldset>
       </div>
       <div class="submitbutton">
