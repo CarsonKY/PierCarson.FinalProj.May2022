@@ -22,11 +22,17 @@ if($_POST) {
     }
       
     if(isset($_POST['visitor_phone'])) {
-        $email_title = filter_var($_POST['visitor_phone'], FILTER_UNSAFE_RAW);
-        $email_body .= "<div>
+        $visitor_phone = filter_var($_POST['visitor_phone'], FILTER_UNSAFE_RAW);
+        $visitor_phone .= "<div>
                            <label><b>Visitor's Phone:</b></label>&nbsp;<span>".$visitor_phone."</span>
                         </div>";
     }
+
+    if(isset($_POST['Email Title'])) {
+        $email_title = "Message from Pier Carson visitor";
+        
+    }
+
       
       
     if(isset($_POST['visitor_message'])) {
