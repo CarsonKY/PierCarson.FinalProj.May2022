@@ -2,7 +2,7 @@
 
 ## Description
 
-A mobile friendly mockup restaurant featuring animation, Google API, and multimedia to present the customer the best online experience 
+A mobile friendly mockup restaurant featuring animation, an editable menu via Google API, PHP and multimedia to present the customer the best online experience 
 
 ## Tech used in build
 
@@ -12,6 +12,31 @@ A mobile friendly mockup restaurant featuring animation, Google API, and multime
 * Javascript JPG carosel welcoming the visitors to the site
 * Javascript JPG Popup Animation for the About Us section
 * Working PHP Contact Us section that sends out an email to my personal acct.
+
+## CL Features from List
+
+These are implemented features off the Features List that ended up on the final project
+
+* Flexbox
+* Working Hamburger Menu
+* Working Contact Us PHP form
+* Show/Hide Object (one map image disappears on small screens)
+
+## Media Queries and Explanation
+
+These are the media queries implemented and what they do
+
+* Aboutus.css @media (min-width: 501px) and (max-width: 992px){
+    Adds padding on the bottom of the images to compensate for the small space
+    
+* Menustyle.css line 110  @media (min-width: 992px) {
+    Adjust the menu margins for smaller screens
+
+* Style.css line 211 @media (max-width: 900px){ 
+    Collapse display of one map image if screen too small
+
+* contactus.ccs
+    NEEDS UPDATING AND TESTING BEFORE SUBMITTING FINAL WORK
 
 ## Getting Started
 

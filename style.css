@@ -212,6 +212,7 @@ a.active,a:hover{
  .splitscreen .left
 	{
 	display:none;
+  width: 32%;
   margin :0px;
   padding: 0;
   justify-content: center;

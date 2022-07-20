@@ -1,5 +1,5 @@
 
-.editlink {
+/* .editlink {
     background-color: cyan;
     border-radius: 50%;
     height: 100px;
@@ -18,7 +18,7 @@
     transform: rotate(12deg);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-}
+} */
 
 .specials-container {
     display: flex;
@@ -120,9 +120,9 @@ td:last-child span {
     }
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
     .editlink {
         right: -20px;
         top: -15px;
     }
-}
+} */
