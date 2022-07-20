@@ -8,10 +8,7 @@
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   
   
-  
 }
-
-
 
 html .contact {
     align-self: center;
@@ -39,6 +36,10 @@ html .contact {
   html #contactform .right {
     float: right;
   }
+
+
+  /* !!! Change to bold and lower case !!! */
+  
   html #contactform input {
     margin-bottom: 14px;
     width: 100%;
@@ -74,7 +75,9 @@ html .contact {
   html #contactform .btn:hover {
     background: rgba(51, 51, 51, 0.7);
   }
-  
+
+  /* !!! Be sure to check these media queries !!! */
+
 
   @media (max-width: 992px){
     .contactheading {

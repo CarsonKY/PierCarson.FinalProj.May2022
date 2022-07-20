@@ -64,7 +64,7 @@ label.logo{
     visibility: hidden;
     
 }
-/* Flex display for easy */
+
 
 nav ul{
   display: block;
@@ -120,6 +120,8 @@ a.active,a:hover{
   display: none;
 }
 
+/* !!! Doublecheck these media queries for submitting !!! */
+
 /* If width less than 952px use less padding and initiate hamburger */
 
 @media (max-width: 952px){
@@ -134,7 +136,6 @@ a.active,a:hover{
 
 @media (max-width: 900px){
 
-   
   .checkbtn{
     display: block;
     
@@ -178,7 +179,8 @@ a.active,a:hover{
   
 }
 
- 
+/* !!! Put these in new file !!!  */
+
 /* Map and Directions section */
 
 .splitscreen {
