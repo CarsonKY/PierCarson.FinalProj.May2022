@@ -47,8 +47,8 @@ if($_POST) {
     }
       
     {
-        $recipient = "piercarson@yahoo.com";
-        // Seafood3#
+        $recipient = "carsonky@twc.com";
+        
     }
       
     $email_body .= "</div>";
