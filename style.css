@@ -193,6 +193,7 @@ a.active,a:hover{
   flex-wrap: wrap;
   margin :0 auto;
   padding: 0;
+background-color: darkgrey;
   
 }
 
@@ -201,21 +202,22 @@ a.active,a:hover{
   
   display: flex;
   flex-wrap: wrap;
-  width: 32%;
+  width: 33%;
 	margin: 0 auto;
+  justify-content: center;
 	/* height: 100px; */
 
  }
 
 
- @media only screen and (min-width: 200px) and (max-width: 767px) {
+ @media only screen and (min-width: 200px) and (max-width: 1275px) {
  .splitscreen .left
 	{
 	display:none;
-  width: 32%;
+  width: 33%;
   margin :0px;
   padding: 0;
-  justify-content: center;
+  justify-content: right;
 } 
 
  } 
