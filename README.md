@@ -27,16 +27,19 @@ These are implemented features off the Features List that ended up on the final 
 These are the media queries implemented and what they do
 
 * Aboutus.css @media (min-width: 501px) and (max-width: 992px){
-    Adds padding on the bottom of the images to compensate for the small space
+&nbsp;&nbsp;&nbsp;    Adds padding on the bottom of the images to compensate for the small space
     
 * Menustyle.css line 110  @media (min-width: 992px) {
-    Adjust the menu margins for smaller screens
+&nbsp;&nbsp;&nbsp;   Adjust the menu margins for smaller screens
 
 * Style.css line 211 @media (max-width: 900px){ 
-    Collapse display of one map image if screen too small
+&nbsp;&nbsp;&nbsp;   Collapse display of one map image if screen too small
 
 * contactus.ccs
-    NEEDS UPDATING AND TESTING BEFORE SUBMITTING FINAL WORK
+&nbsp;&nbsp;&nbsp;   NEEDS UPDATING AND TESTING BEFORE SUBMITTING FINAL WORK
+
+* H1 tag
+&nbsp;&nbsp;&nbsp;   The mandatory H1 tag is actually hidden.  It's located under the nav bar with display:hidden
 
 ## Getting Started
 
