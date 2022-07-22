@@ -1,0 +1,44 @@
+/* Map and Directions section */
+
+.splitscreen {
+  
+    display: flex;
+  flex-wrap: wrap;
+  margin :0 auto;
+  padding: 0;
+background-color: darkgrey;
+  
+}
+
+.splitscreen .left,.splitscreen .middle, .splitscreen .right
+ {
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+	margin: 0 auto;
+  justify-content: center;
+	
+
+ }
+
+
+ @media only screen and (min-width: 200px) and (max-width: 1275px) {
+ .splitscreen .left
+	{
+	display:none;
+  width: 33%;
+  margin :0px;
+  padding: 0;
+  justify-content: right;
+} 
+
+ } 
+
+ .splitscreen .middle{
+  justify-content: center;
+ }
+
+ .splitscreen .right{
+  justify-content: center;
+ }
