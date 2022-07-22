@@ -22,7 +22,7 @@ if($_POST) {
                         </div>";
     }
       
-    if(isset($_POST['visitor_subject'])) {
+    if(isset($_POST['visitor_phone'])) {
         $visitor_phone = filter_var($_POST['visitor_phone'], FILTER_UNSAFE_RAW);
         $visitor_phone .= "<div>
                            <label><b>Visitor's Subject:</b></label>&nbsp;<span>".$visitor_phone."</span>
@@ -65,7 +65,7 @@ if($_POST) {
         
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
-        echo '<p>Please click the logo below to return to the main menu.</p>';
+        echo $link_to_piercarson; 'target='_blank'>Click here to visit PierCarson</a><br/>;
     }
       
 } else {
