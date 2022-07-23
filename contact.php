@@ -4,8 +4,10 @@ if($_POST) {
     $visitor_name = "";
     $visitor_email = "";
     $visitor_message = "";
+    $visitor_phone = "";
     $email_title = "";
     $email_body = "<div>";
+    
       
     if(isset($_POST['visitor_name'])) {
         $visitor_name = filter_var($_POST['visitor_name'], FILTER_UNSAFE_RAW);
@@ -25,7 +27,7 @@ if($_POST) {
     if(isset($_POST['visitor_phone'])) {
         $visitor_phone = filter_var($_POST['visitor_phone'], FILTER_UNSAFE_RAW);
         $visitor_phone .= "<div>
-                           <label><b>Visitor's Subject:</b></label>&nbsp;<span>".$visitor_phone."</span>
+                           <label><b>Visitor's Phone:</b></label>&nbsp;<span>".$visitor_phone."</span>
                         </div>";
     }
 
@@ -46,6 +48,9 @@ if($_POST) {
                         </div>";
     }
       
+    
+    if(isset($_POST['email title'])) {
+        $email_title = "Message from Pier Carson visitor";
     {
         $recipient = "carsonky@twc.com";
         $link_to_piercarson = "https://carsonh.com/PierCarson"; 
@@ -72,4 +77,5 @@ if($_POST) {
     echo '<p>Something went wrong</p>';
 }
 
+}
 ?>
