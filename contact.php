@@ -4,8 +4,6 @@ if($_POST) {
     $visitor_name = "";
     $visitor_email = "";
     $visitor_message = "";
-    $visitor_phone = "";
-    $subject = "";
     $email_title = "";
     $email_body = "<div>";
     
@@ -25,12 +23,6 @@ if($_POST) {
                         </div>";
     }
       
-    if(isset($_POST['visitor_phone'])) {
-     $visitor_phone = filter_var($_POST['visitor_phone'], FILTER_UNSAFE_RAW);
-        $visitor_phone .= "<div>
-                           <label><b>Visitor's Phone:</b></label>&nbsp;<span>".$visitor_phone."</span>
-                      </div>";
-}
       
       
     if(isset($_POST['visitor_message'])) {
@@ -67,12 +59,10 @@ if($_POST) {
         $image = "Images/piercarsonnav2.png";  
 
 echo '<a href="https://www.carsonh.com/PierCarson"><img src="'.$image.'" </a>';
-
-               
         
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
-        
+       
     }
       
 } else {
