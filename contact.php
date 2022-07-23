@@ -5,6 +5,7 @@ if($_POST) {
     $visitor_email = "";
     $visitor_message = "";
     $visitor_phone = "";
+    $subject = "";
     $email_title = "";
     $email_body = "<div>";
     
@@ -25,19 +26,11 @@ if($_POST) {
     }
       
     if(isset($_POST['visitor_phone'])) {
-        $visitor_phone = filter_var($_POST['visitor_phone'], FILTER_UNSAFE_RAW);
+     $visitor_phone = filter_var($_POST['visitor_phone'], FILTER_UNSAFE_RAW);
         $visitor_phone .= "<div>
                            <label><b>Visitor's Phone:</b></label>&nbsp;<span>".$visitor_phone."</span>
-                        </div>";
-    }
-
-    if(isset($_POST['email_title'])) {
-        $email_title = filter_var($_POST['email_title'], FILTER_UNSAFE_RAW);
-        $email_body .= "<div>
-                           <label><b>Reason For Contacting Us:</b></label>&nbsp;<span>".$email_title."</span>
-                        </div>";
-    }
-
+                      </div>";
+}
       
       
     if(isset($_POST['visitor_message'])) {
@@ -50,32 +43,41 @@ if($_POST) {
       
     
     if(isset($_POST['email title'])) {
-        $email_title = "Message from Pier Carson visitor";
+         $email_title = "Message from Pier Carson visitor";
+    }
+
     {
+        $email_title = "Message from Pier Carson visitor";
         $recipient = "carsonky@twc.com";
         $link_to_piercarson = "https://carsonh.com/PierCarson"; 
         
     }
       
     $email_body .= "</div>";
+    
      
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $visitor_email . "\r\n";
       
     if(mail($recipient, $email_title, $email_body, $headers)) {
-        echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+        echo '<span style="font-size: 20px;"> ' ."<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+        
         echo '<p>Please click the logo below to return to the main menu.</p>';
-        // echo $link_to_piercarson; "target='_blank'>Click here to visit PierCarson</a><br/>;
+        $image = "Images/piercarsonnav2.png";  
+
+echo '<a href="https://www.carsonh.com/PierCarson"><img src="'.$image.'" </a>';
+
+               
         
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
-        // echo $link_to_piercarson; 'target='_blank'>Click here to visit PierCarson</a><br/>;
+        
     }
       
 } else {
     echo '<p>Something went wrong</p>';
 }
 
-}
+
 ?>
