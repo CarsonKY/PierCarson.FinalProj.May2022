@@ -61,14 +61,15 @@ if($_POST) {
     if(mail($recipient, $email_title, $email_body, $headers)) {
         echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
         echo '<p>Please click the logo below to return to the main menu.</p>';
-        echo $link_to_piercarson; ?>' target='_blank'>Click here to visit PierCarson</a><br/>;
+        // echo $link_to_piercarson; "target='_blank'>Click here to visit PierCarson</a><br/>;
         
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
-        echo $link_to_piercarson; 'target='_blank'>Click here to visit PierCarson</a><br/>;
+        // echo $link_to_piercarson; 'target='_blank'>Click here to visit PierCarson</a><br/>;
     }
       
 } else {
     echo '<p>Something went wrong</p>';
 }
+
 ?>
