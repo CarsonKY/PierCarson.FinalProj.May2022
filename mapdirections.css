@@ -23,11 +23,13 @@ background-color: darkgrey;
  }
 
 
- @media only screen and (min-width: 200px) and (max-width: 1275px) {
+ @media only screen and (min-width: 300px) and (max-width: 1050px) {
  .splitscreen .left
 	{
+  display: flex;
+  flex-wrap: wrap;
 	display:none;
-  width: 33%;
+  max-width: 33%;
   margin :0px;
   padding: 0;
   justify-content: right;
@@ -37,6 +39,7 @@ background-color: darkgrey;
 
  .splitscreen .middle{
   justify-content: center;
+  
  }
 
  .splitscreen .right{
