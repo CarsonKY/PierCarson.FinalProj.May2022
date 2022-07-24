@@ -120,16 +120,51 @@ a.active,a:hover{
   display: none;
 }
 
-.homemainImg {
-    
-  display: flex;  
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  }
-/* !!! Doublecheck these media queries for submitting !!! */
 
-/* If width less than 952px use less padding and initiate hamburger */
+/* Iphone size main image */
+
+
+@media only screen and (max-width: 400px) {
+  
+  .homemainImg {
+    width: 300%;
+    /* background-image: url('Images/piercarsonmaintitlesmall350.png');
+    display: block; */
+}
+
+} 
+
+
+/* Tablet size main image */
+
+@media (min-width: 401px) and (max-width: 700px) {
+  
+  .homemainImg {
+    width: 200%;
+    /* background-image: url('Images/piercarsonmaintitlesmall350.png');
+    display: block; */
+}
+
+} 
+
+
+
+
+@media (min-width: 701px) and (max-width: 1900px) {
+
+  .homemainImg {
+      
+   display: flex;   
+    width: 100%;
+   height: auto; 
+    justify-content: center;
+    
+    /* max-width: 2000px; */
+    }
+  }
+  
+
+
 
 @media (max-width: 952px){
   
