@@ -15,7 +15,7 @@ background-color: darkgrey;
   
   display: flex;
   flex-wrap: wrap;
-  width: 33%;
+  /* width: 33%; */
 	margin: 0 auto;
   justify-content: center;
 	
@@ -23,25 +23,63 @@ background-color: darkgrey;
  }
 
 
- @media only screen and (min-width: 300px) and (max-width: 1050px) {
- .splitscreen .left
-	{
+@media (min-width: 300px) and (max-width: 600px) {
+  .splitscreen .left
+   {
+   display: flex;
+   flex-wrap: wrap;
+   display:none;
+   /* max-width: 33%; */
+   margin :0px;
+   padding: 0;
+   justify-content: center; 
+ } 
+ 
+  } 
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    .splitscreen .left
+     {
+     display: flex;
+     flex-wrap: wrap;
+     /* display:none; */
+     /* max-width: 33%; */
+     margin :0px;
+     padding: 0;
+     justify-content: center; 
+   } 
+   
+    } 
+  
+ 
+/*  
+  @media only screen and (min-width: 300px) and (max-width: 900px) {
+   .splitscreen .middle, .splitscreen .right
+ 
+   {
+     display: flex;
+     flex-wrap: wrap;
+     
+     /* max-width: 33%; */
+     /* margin :0px;
+     padding: 0; */
+    /* justify-content: center;  */
+   /* }
+  } */
+
+
+  
+
+ /* .splitscreen .middle, .splitscreen .right{
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-	display:none;
-  max-width: 33%;
+	max-width: 33%;
   margin :0px;
   padding: 0;
-  justify-content: right;
-} 
-
- } 
-
- .splitscreen .middle{
-  justify-content: center;
   
- }
+ } */
 
- .splitscreen .right{
+ /* .splitscreen .right{
   justify-content: center;
- }
+ } */
