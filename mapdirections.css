@@ -41,8 +41,12 @@ background-color: darkgrey;
      {
     
      display:all;
+     
+     
+     margin: 20px auto;
      justify-content: center;
-     ;
+     border-top: groove;
+     
      
    
    } 
