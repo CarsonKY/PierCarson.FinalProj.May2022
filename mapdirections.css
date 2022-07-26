@@ -36,7 +36,7 @@ background-color: darkgrey;
  
   } 
 
-  @media (min-width: 701px) and (max-width: 2800px) {
+  @media (min-width: 701px) and (max-width: 1000px){
     .splitscreen .right
      {
     
@@ -46,7 +46,7 @@ background-color: darkgrey;
      margin: 20px auto;
      justify-content: center;
      border-top: groove;
-     
+     background-image: url('Images/piercarsonthankyou405.png');
      
    
    } 

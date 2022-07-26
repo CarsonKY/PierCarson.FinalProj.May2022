@@ -127,9 +127,9 @@ a.active,a:hover{
 @media (min-width: 100px) and (max-width: 400px) {
   
   .homemainImg {
-    width: 300%;
-    /* background-image: url('Images/piercarsonmaintitlesmall350.png');
-    display: block; */
+    /* width: 300%; */
+    background-image: url('Images/piercarsonmaintitlesmall350.png');
+    display: block;
 }
 
 } 
@@ -137,12 +137,12 @@ a.active,a:hover{
 
 /* Tablet size main image */
 
-@media (min-width: 401px) and (max-width: 700px) {
+@media (min-width: 401px) and (max-width: 799px) {
   
   .homemainImg {
-    width: 200%;
-    /* background-image: url('Images/piercarsonmaintitlesmall350.png');
-    display: block; */
+    width: 100%;
+    background-image: url('Images/piercarsonmaintitlemedium700.png');
+    display: block;
 }
 
 } 
@@ -150,7 +150,7 @@ a.active,a:hover{
 /* Large Tablet and desktop size main image */
 
 
-@media (min-width: 701px) and (max-width: 1900px) {
+@media (min-width: 800px) {
 
   .homemainImg {
       
@@ -164,7 +164,7 @@ a.active,a:hover{
   }
   
 
-
+/*  Nav Bar styling */
 
 @media (max-width: 952px){
   
