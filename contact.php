@@ -56,7 +56,7 @@ if($_POST) {
         echo '<span style="font-size: 20px;"> ' ."<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
         
         echo '<p>Please click the logo below to return to the main menu.</p>';
-        $image = "Images/piercarsonnav2.png";  
+        $image = "Images/piercarsonnav2.PNG";  
 
 echo '<a href="https://www.carsonh.com/PierCarson"><img src="'.$image.'" </a>';
         
