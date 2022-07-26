@@ -124,7 +124,7 @@ a.active,a:hover{
 /* Iphone size main image */
 
 
-@media only screen and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   
   .homemainImg {
     width: 300%;
