@@ -4,12 +4,15 @@
 
 A mobile friendly mockup restaurant featuring animation, an editable menu via Google API, PHP and multimedia to present the customer the best online experience 
 
+### Executing program
+
+* The website can be launched at https://carsonh.com/PierCarson
+
 ## Tech used in build
 
 * HTML, CSS, Javascript, PHP, Axios / Google API
 * Working Hamburger Nav that smoothly sends the user to the section of the site selected
 * Google API used to integrate new prices into the menu using a online spreadsheet
-* Javascript JPG carosel welcoming the visitors to the site
 * Javascript JPG Popup Animation for the About Us section
 * Working PHP Contact Us section that sends out an email to my personal acct.
 
@@ -22,38 +25,16 @@ These are implemented features off the Features List that ended up on the final 
 * Working Contact Us PHP form
 * Show/Hide Object (one map image disappears on small screens)
 
-## Media Queries and Explanation
-
-These are the media queries implemented and what they do
-
-* Aboutus.css @media (min-width: 501px) and (max-width: 992px){
-&nbsp;&nbsp;&nbsp;    Adds padding on the bottom of the images to compensate for the small space
-    
-* Menustyle.css line 110  @media (min-width: 992px) {
-&nbsp;&nbsp;&nbsp;   Adjust the menu margins for smaller screens
-
-* Style.css line 211 @media (max-width: 900px){ 
-&nbsp;&nbsp;&nbsp;   Collapse display of one map image if screen too small
-
-* contactus.ccs
-&nbsp;&nbsp;&nbsp;   NEEDS UPDATING AND TESTING BEFORE SUBMITTING FINAL WORK
-
-* H1 tag
-&nbsp;&nbsp;&nbsp;   The mandatory H1 tag is actually hidden.  It's located under the nav bar with display:hidden
-
 ## Getting Started
 
 ### Dependencies
 
-* Tested in a Windows 10 environment with Firefox, Chrome and Edge along with Iphone and Android phones.  
+* Tested in a Windows 10 environment with Firefox as primary.  Chrome and Edge along with Iphone and Android phones also work and display correctly.  
 
 ### Installing
 
 * Web Based. No installation needed beyond the usual built in browsers
 
-### Executing program
-
-* The website can be launched at https://carsonh.com/PierCarson
 
 ## Help
 

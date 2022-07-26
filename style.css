@@ -147,7 +147,7 @@ a.active,a:hover{
 
 } 
 
-
+/* Large Tablet and desktop size main image */
 
 
 @media (min-width: 701px) and (max-width: 1900px) {
@@ -159,7 +159,7 @@ a.active,a:hover{
    height: auto; 
     justify-content: center;
     
-    /* max-width: 2000px; */
+    
     }
   }
   
@@ -173,7 +173,7 @@ a.active,a:hover{
   }
 }
 
-/* At 858px activate hamburger menu in vertical block in a slow transition l-r*/
+
 
 
 @media (max-width: 900px){

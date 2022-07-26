@@ -38,7 +38,7 @@ background-color: darkgrey;
  
   } 
 
-  @media (min-width: 701px) and (max-width: 1300px) {
+  @media (min-width: 701px) and (max-width: 2800px) {
     .splitscreen .right
      {
     

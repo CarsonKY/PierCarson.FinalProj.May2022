@@ -76,30 +76,4 @@ html .contact {
     background: rgba(51, 51, 51, 0.7);
   }
 
-  /* !!! Be sure to check these media queries !!! */
-
-
-  @media (max-width: 992px){
-    .contactheading {
-      color: black;
-      background-color:bisque;
-      font-family: Seaweed, sans-serif;
-      text-align: center;
-      font-size: 2em;
-      /* margin-top: 7em; */
-      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    }
-  }      
-
-  @media (min-width: 201px) and (max-width: 1992px){
-    .contactheading {
-      color: black;
-      background-color:bisque;
-      font-family: Seaweed, sans-serif;
-      text-align: center;
-      font-size: 2em;
-      /* margin-top: 10em; */
-      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
-    }
-  }
+  
