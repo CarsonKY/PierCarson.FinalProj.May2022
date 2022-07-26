@@ -120,37 +120,40 @@ a.active,a:hover{
   display: none;
 }
 
-
 /* Iphone size main image */
 
 
-@media (min-width: 100px) and (max-width: 400px) {
+@media (min-width: 101px) and (max-width: 400px) {
   
   .homemainImg {
     /* width: 300%; */
-    background-image: url('Images/piercarsonmaintitlesmall350.png');
-    display: block;
+    height: auto;
+      width: 100%;
+    content: url('Images/piercarsonmaintitlesmall350.png');
+    display: flex;
 }
 
 } 
 
 
-/* Tablet size main image */
+  /* Tablet size main image */
 
-@media (min-width: 401px) and (max-width: 799px) {
+  @media (min-width: 401px) and (max-width: 899px) {
   
-  .homemainImg {
-    width: 100%;
-    background-image: url('Images/piercarsonmaintitlemedium700.png');
-    display: block;
-}
-
-} 
-
+    .homemainImg {
+      height: auto;
+      width: 100%;
+      content: url('Images/piercarsonmaintitlemedium700.png');
+      display: flex;
+  }
+  
+  } 
+  
+  
 /* Large Tablet and desktop size main image */
 
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
   .homemainImg {
       
@@ -162,6 +165,9 @@ a.active,a:hover{
     
     }
   }
+
+
+
   
 
 /*  Nav Bar styling */
