@@ -37,9 +37,7 @@ html .contact {
     float: right;
   }
 
-
-  /* !!! Change to bold and lower case !!! */
-  
+    
   html #contactform input {
     margin-bottom: 14px;
     width: 100%;

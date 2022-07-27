@@ -16,14 +16,6 @@ A mobile friendly mockup restaurant featuring animation, an editable menu via Go
 * Javascript JPG Popup Animation for the About Us section
 * Working PHP Contact Us section that sends out an email to my personal acct.
 
-## CL Features from List
-
-These are implemented features off the Features List that ended up on the final project
-
-* Flexbox
-* Working Hamburger Menu
-* Working Contact Us PHP form
-* Show/Hide Object (one map image disappears on small screens)
 
 ## Getting Started
 
