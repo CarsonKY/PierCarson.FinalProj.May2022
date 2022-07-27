@@ -16,6 +16,13 @@ A mobile friendly mockup restaurant featuring animation, an editable menu via Go
 * Javascript JPG Popup Animation for the About Us section
 * Working PHP Contact Us section that sends out an email to my personal acct.
 
+## Required CL Features List
+
+* Flexbox breaking down columns from four to two to one
+* Hamburger Nav
+* A working Contact Us Form
+* Show/Hide element in the Visit Us section depending on screen size.
+
 
 ## Getting Started
 
